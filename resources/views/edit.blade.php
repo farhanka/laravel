@@ -50,15 +50,13 @@
                     <input class="form-check-input" type="radio" name="Jenis_kelamin" id="inlineRadio2" value="Perempuan">
                     <label class="form-check-label" for="inlineRadio2">Perempuan</label>
                 </div>
-            </div>   
+            </div>  
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Dosen Wali</label>
                 <select class="custom-select custom-select-lg col-md-6" name="doswal">
-                    <option selected value="{{ $data->dosenwali_id }}">{{ $data->dosenwali->nama }} ( {{ $data->dosenwali->nip }} )</option>
                     @foreach($doswal as $d)                                         
                     <option value="{{ $d->id }}">{{ $d->nama  }} ( {{ $d->nip }} )</option>   
-                    @endforeach 
-                                                              
+                    @endforeach                                    
                 </select>
             </div>
             <div class="form-group row">  

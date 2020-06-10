@@ -13,9 +13,10 @@ class MahasiswaSeeder extends Seeder
     public function run()
     {
         Mahasiswa::create([
-            'nama' => 'Sampel Mahasiswa',
-            'nim' => '1808107010000',
-            'jenis_kelamin' => 'P',
+            'nama' => 'Hijaiyah Imanda Putri',
+            'nim' => '1808107010010',
+            'jenis_kelamin' => 'Perempuan',
+            'dosenwali_id' => '1',
         ]);
     }
 }

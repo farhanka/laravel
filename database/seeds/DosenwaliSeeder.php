@@ -12,8 +12,24 @@ class DosenwaliSeeder extends Seeder
     public function run()
     {
         DosenWali::create([
-            'nama' => 'Sampel Dosen',
-            'nip' => '123789',
+            'nama' => 'Dr. Taufik Fuadi Abidin, S.Si, M.Tech',
+            'nip' => '12378934',
+        ]);
+        DosenWali::create([
+            'nama' => 'Dr. Muhammad Subianto, S.Si, M.Si',
+            'nip' => '12378955',
+        ]);
+        DosenWali::create([
+            'nama' => 'Irvanizam Zamanhuri, S.Si, M.Sc',
+            'nip' => '1223589',
+        ]);
+        DosenWali::create([
+            'nama' => 'Viska Mutiawani, B.IT, M.IT',
+            'nip' => '13453789',
+        ]);
+        DosenWali::create([
+            'nama' => 'Dr. Zahnur Nurdin, S.Si, M.InfoTech',
+            'nip' => '12323789',
         ]);
     }
 }

@@ -71,7 +71,7 @@ class MahasiswaController extends Controller
     public function edit($id)
     {
         $data = Mahasiswa::find($id);
-        $doswal = Dosenwali::where('id', '!=', '$data->dosenwali_id');
+        $doswal = Dosenwali::all();
         return view('edit', compact('data','doswal'));
     }
 
@@ -85,11 +85,13 @@ class MahasiswaController extends Controller
     public function update(Request $request, $id)
     {
         $data = Mahasiswa::find($id);
+        
         $data->update([
             'nama' => $request->Nama,
             'nim' => $request->Nim,
             'jenis_kelamin' => $request->Jenis_kelamin,
             'dosenwali_id' => $request->doswal,
+            
             
         ]);
 

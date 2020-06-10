@@ -46,12 +46,12 @@
         <td>{{ $data[$i]->jenis_kelamin }}</td>
         <td>{{ $data[$i]->dosenwali->nama }}</td>
         <td class="d-flex justify-content-center">   
-            <a href="/edit/{{ $data[$i]->id }}" class="btn btn-success mr-2"><i class="far fa-edit"></i></a>
+            <a href="/edit/{{ $data[$i]->id }}" class="btn btn-success mr-2">EDIT</a>
             
         <form action="/hapus/{{ $data[$i]->id }}" method="post">
             @method('post')
             @csrf
-            <button type="submit" class="btn btn-danger" > <i class="far fa-trash-alt"></i> </button>
+            <button type="submit" class="btn btn-danger" >HAPUS</button>
         </form>
          </td>
        </tr>
